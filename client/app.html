@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app2.js"></script>
+</head>
+<body>
+    <form>
+        <label for="sqft"> Your home size:</label><br>
+        <input type="number" id="sqft" name="square_feet"><br>
+        <label for="bath"> Bathrooms number </label><br>
+        <input type="radio" id="bath1" name="bath" value=1>
+        <label for="bath">1</label><br>
+        <input type="radio" id="bath2" name="bath" value=2>
+        <label for="bath">2</label><br>
+        <input type="radio" id="bath3" name="bath" value=3>
+        <label for="bath">3</label><br>
+        <input type="radio" id="bath4" name="bath" value=4>
+        <label for="bath">4</label><br>
+        <input type="radio" id="bath5" name="bath" value=5>
+        <label for="bath">5</label><br>
+
+        <label for="bath">  How many bhk </label><br>
+        <input type="radio" id="bhk1" name="bhk" value=1>
+        <label for="bath">1</label><br>
+        <input type="radio" id="bhk1" name="bhk" value=2>
+        <label for="bath">2</label><br>
+        <input type="radio" id="bhk1" name="bhk" value=3>
+        <label for="bath">3</label><br>
+        <input type="radio" id="bhk1" name="bhk" value=4>
+        <label for="bath">4</label><br>
+        <input type="radio" id="bhk1" name="bhk" value=5>
+        <label for="bath">5</label><br>
+        <!-- <input type="button" name="submit" value="Submit"><br> -->
+
+        <label > location</label><br>
+        <select id="uil">
+            <option value="" disabled="disabled" selected="selected"> choose a location </option>
+            <option>gandhi nagar</option>
+            <option>rajiv nagar</option>
+        </select>
+        <br>
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price
+        </button>
+        <div id="estimate" >	<h2>this is it</h2> </div>
+    </form>
+</body>
+</html>
